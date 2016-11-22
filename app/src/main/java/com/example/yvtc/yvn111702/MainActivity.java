@@ -35,4 +35,11 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(MainActivity.this, SettingsActivity.class);
         startActivity(it);
     }
+
+    public void clickReadName(View v)
+    {
+        SharedPreferences sp1 = getSharedPreferences(getPackageName() + "_preferences", MODE_PRIVATE);
+        String str = sp1.getString("example_text", "Test");
+        Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
+    }
 }

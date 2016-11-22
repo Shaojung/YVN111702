@@ -46,4 +46,13 @@
         android:layout_alignParentStart="true"
         android:id="@+id/button3"
         android:onClick="clickSettings" />
+
+    <Button
+        android:text="Read Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:id="@+id/button4"
+        android:onClick="clickReadName" />
 </RelativeLayout>
